@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/genericsetup"
+    i18n_domain="plonetheme.trantor">
+
+    <upgradeStep
+        source="1000"
+        destination="1001"
+        title="Upgrade"
+        description=""
+        profile="plonetheme.trantor:default"
+        handler=".v1000_to_1001.upgrade_1000_to_1001"
+        />
+
+</configure>
