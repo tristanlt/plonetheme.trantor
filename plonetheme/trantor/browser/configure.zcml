@@ -10,23 +10,40 @@
       />
   
   <include package="plone.app.contentmenu" /> 
-  
-  <!-- EXAMPLE:
-  <browser:viewlet
-      name="plonetheme.someviewlet"
-      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-      class=".viewlets.MyViewlet"
-      layer=".interfaces.IThemeSpecific"
-      permission="zope2.View"
+
+    <browser:viewlet
+        name="plone.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".dropdown.DropdownMenuViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+        
+<browser:viewlet
+        name="plone.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+        class=".viewlets.PathBarViewlet"
+        template="path_bar.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+        
+<browser:viewlet
+    name="plone.contentviews"
+    manager="plone.app.layout.viewlets.interfaces.IContentViews"
+    template="contentviews.pt"
+    class="plone.app.layout.viewlets.common.ContentViewsViewlet"
+    layer=".interfaces.IThemeSpecific"
+    permission="zope2.View"
+    />
+
+<adapter
+      for="*
+           zope.publisher.interfaces.browser.IDefaultBrowserLayer
+           *"
+      factory=".viewlets.TrantorContentMenuProvider"
+      name="plone.contentmenu"
+      provides="zope.contentprovider.interfaces.IContentProvider"
       />
-  <browser:page
-      name="myview"
-      menu="plone_displayviews"
-      title="Galleria"
-      class=".myfile.MyView"
-      layer=".interfaces.IThemeSpecific"
-      permission="zope2.View"
-      />
-  -->
 
 </configure>
