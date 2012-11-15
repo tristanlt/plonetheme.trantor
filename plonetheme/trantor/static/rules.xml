@@ -23,7 +23,14 @@
     <replace css:theme-children="#secondary-nav" css:if-content="#anon-personalbar">
         <li><xsl:copy-of css:select="#personaltools-login"/></li>
     </replace>
-    
+
+
+	<replace css:content-children=".formTabs ul">
+	gawinga
+	</replace>
+
+
+
     <append css:content="#portal-column-content" css:theme="#portal-column-content"/>
     <append css:content="#portal-column-one" css:theme="#portal-column-one"/>
     <append css:content="#portal-column-two" css:theme="#portal-column-two"/>
