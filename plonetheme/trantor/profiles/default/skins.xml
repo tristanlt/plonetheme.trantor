@@ -6,7 +6,7 @@
     meta_type="Filesystem Directory View"
     directory="plonetheme.trantor:skins/plonetheme_trantor_custom"/>
 
- <skin-path name="plonetheme.trantor" based-on="Sunburst Theme">
+ <skin-path name="plonetheme.trantor">
   <layer name="plonetheme_trantor_custom"
      insert-after="custom"/>
  </skin-path>
