@@ -24,13 +24,35 @@
         <li><xsl:copy-of css:select="#personaltools-login"/></li>
     </replace>
 
-
 	<replace css:content-children=".formTabs ul">
 	gawinga
 	</replace>
-
-
-
+	
+	<replace css:content="form.enableFormTabbing">
+	<dl class='tabs'>
+		<xsl:for-each css:select="form.enableFormTabbing > fieldset">
+		<xsl:variable name="cur" select='position()' />
+		<dd >
+		<xsl:if test="$cur=1"> <xsl:attribute name="class">active</xsl:attribute></xsl:if> 
+		<a>
+			<xsl:attribute name="href"><xsl:text>#Tab</xsl:text><xsl:value-of select="$cur" /></xsl:attribute>
+			<xsl:value-of select="legend"/>
+		</a>
+		</dd>
+		</xsl:for-each>
+	</dl>
+	<ul class="tabs-content">
+		<xsl:for-each css:select="form.enableFormTabbing > fieldset">
+		<xsl:variable name="cur" select='position()' />
+		<li>
+			<xsl:if test="$cur=1"> <xsl:attribute name="class">active</xsl:attribute></xsl:if>
+			<xsl:attribute name="id" ><xsl:text>Tab</xsl:text><xsl:value-of select="$cur" /><xsl:text>Tab</xsl:text></xsl:attribute>
+			<xsl:copy-of select="div"/>
+		</li>
+		</xsl:for-each>
+	</ul>
+	</replace>
+	
     <append css:content="#portal-column-content" css:theme="#portal-column-content"/>
     <append css:content="#portal-column-one" css:theme="#portal-column-one"/>
     <append css:content="#portal-column-two" css:theme="#portal-column-two"/>
@@ -38,5 +60,6 @@
 
     <append css:content="#portal-footer" css:theme="#portal-footer"/>
     <append css:content="#portal-siteactions" css:theme="#portal-siteactions"/>
-    <append css:content="#portal-colophon" css:theme="#portal-colophon"/>
+	<append css:content="#portal-colophon" css:theme="#portal-colophon"/>
+
 </rules>
