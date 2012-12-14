@@ -9,7 +9,7 @@
     <theme href="index.html" />
 
 <replace content='/html/head/title' theme='/html/head/title' />
-<!--    <replace content='/html/head' theme='/html/head' /> -->
+<replace content='/html/head' theme='/html/head' />
 <!--    <merge attributes="class" css:content="body" css:theme="body" /> -->
 <!--    <copy attributes="id dir" css:content="body" css:theme="body" /> -->
 
