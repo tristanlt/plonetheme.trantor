@@ -22,3 +22,4 @@ var
 *.tmp*
 .project
 .pydevproject
+plonetheme/trantor/static/foundation/.sass-cache
