@@ -22,13 +22,8 @@
     <replace css:theme-children="#secondary-nav" css:if-content="#anon-personalbar">
         <li><xsl:copy-of css:select="#personaltools-login"/></li>
     </replace>
-
-	<replace css:content-children=".formTabs ul">
-	gawinga
-	</replace>
 	
 	<replace css:content="form.enableFormTabbing">
-
 	<dl class='tabs'>
 		<xsl:for-each css:select="form.enableFormTabbing > fieldset">
 		<xsl:variable name="cur" select='position()' />
