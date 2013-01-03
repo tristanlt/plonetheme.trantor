@@ -5,9 +5,6 @@
     id="++theme++plonetheme.trantor/theme.css"
     expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 <stylesheet
-    id="++theme++plonetheme.trantor/foundation/stylesheets/foundation.min.css"
-    expression="request/HTTP_X_THEME_ENABLED | nothing"/>
-<stylesheet
     id="++theme++plonetheme.trantor/foundation/stylesheets/app.css"
     expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
