@@ -2,6 +2,6 @@
 <object name="portal_javascripts">
 
  <javascript
-    id="++theme++plonetheme.trantor/foundation/javascripts/foundation/app.js"/>
+    id="++theme++plonetheme.trantor/foundation/javascripts/foundation/modernizr.foundation.js"/>
 
 </object>
