@@ -2,13 +2,13 @@
 @import "settings";
 
 // Comment out this import if you are customizing you imports below
-@import "foundation";
+// @import "foundation";
 
 // ----------------------------------------
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
 
-// @import "compass/css3";
+@import "compass/css3";
 @import "foundation/settings";
 @import "foundation/functions/all";
 
@@ -33,7 +33,7 @@
 // Control which common styles get compiled
 
 @import "foundation/common/typography";
-@import "foundation/common/forms";
+//@import "foundation/common/forms";
 
 // Control which components you get if customizing
 

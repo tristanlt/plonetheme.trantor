@@ -3,6 +3,17 @@
   @extend .alert-box;
   @extend .secondary;
 }
-.discreet {
+.documentDescription, .documentDescirption {
   @extend .subheader;
+  font-size: 20px;
   }
+.discreet, .formHelp {
+  @extend .subheader;
+}
+.portletWrapper {
+ @extend .panel;
+ @extend .radius;
+ }
+#content-core legend {
+	font-size: 120%;
+	}
