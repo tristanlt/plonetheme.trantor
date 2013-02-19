@@ -23,6 +23,16 @@
         <li><xsl:copy-of css:select="#personaltools-login"/></li>
     </replace>
 	
+	<replace css:content-children="dl.portalMessage">
+	<div class="portalMessage alert-box">
+		<xsl:for-each css:select="dl.portalMessage">
+			<xsl:value-of css:select="dl.portalMessage dt"/>
+			<xsl:text> : </xsl:text>
+			<xsl:value-of css:select="dl.portalMessage dd"/>
+		</xsl:for-each>
+	</div>
+	</replace>
+	
 	<replace css:content-children="form.enableFormTabbing">
 	<dl class='tabs'>
 		<xsl:for-each css:select="form.enableFormTabbing > fieldset">

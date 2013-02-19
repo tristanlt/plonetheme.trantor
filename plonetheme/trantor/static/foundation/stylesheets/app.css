@@ -674,7 +674,7 @@ hr {
 }
 
 /* line 36, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
-.subheader, .documentDescription, .documentDescirption, .discreet, .formHelp {
+.subheader, .documentDescription, .discreet, .formHelp {
   line-height: 1.3;
   color: #6f6f6f;
   font-weight: 300;
@@ -5401,11 +5401,11 @@ table.hide-for-medium {
   }
 }
 /* line 6, ../sass/_custom4plone.scss */
-.documentDescription, .documentDescirption {
+.documentDescription {
   font-size: 20px;
 }
 
-/* line 17, ../sass/_custom4plone.scss */
+/* line 19, ../sass/_custom4plone.scss */
 #content-core legend {
   font-size: 120%;
 }
