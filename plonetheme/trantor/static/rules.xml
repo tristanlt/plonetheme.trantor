@@ -23,7 +23,7 @@
         <li><xsl:copy-of css:select="#personaltools-login"/></li>
     </replace>
 	
-	<replace css:content="form.enableFormTabbing">
+	<replace css:content-children="form.enableFormTabbing">
 	<dl class='tabs'>
 		<xsl:for-each css:select="form.enableFormTabbing > fieldset">
 		<xsl:variable name="cur" select='position()' />
@@ -46,6 +46,8 @@
 		</li>
 		</xsl:for-each>
 	</ul>
+    <xsl:copy-of css:select="#cmfeditions_version_comment_block"/>
+    <xsl:copy-of css:select=".formControls"/>
 	</replace>
 
     <append css:content="#portal-column-content" css:theme="#portal-column-content"/>
