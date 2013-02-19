@@ -38,3 +38,6 @@ html, body {
     padding-right: 0;
     height: 80px;
 }
+#nav-row {
+	overflow: visible;
+}
