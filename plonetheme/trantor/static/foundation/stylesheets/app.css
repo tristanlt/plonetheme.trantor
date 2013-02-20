@@ -5409,3 +5409,66 @@ table.hide-for-medium {
 #content-core legend {
   font-size: 120%;
 }
+
+/* line 22, ../sass/_custom4plone.scss */
+.fieldErrorBox {
+  color: #c60f13;
+}
+
+/* line 25, ../sass/_custom4plone.scss */
+.formQuestion {
+  padding: 1px 4px 2px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+  display: inline;
+  position: relative;
+  bottom: 1px;
+  color: #fff;
+  background: #2ba6cb;
+  padding: 1px 7px 2px;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+  margin-bottom: 5px;
+}
+
+/* line 30, ../sass/_custom4plone.scss */
+.formHelp {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+/* line 34, ../sass/_custom4plone.scss */
+input[type='submit'] {
+  width: auto;
+  background: #2ba6cb;
+  border: 1px solid #1e728c;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 20px 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  font-size: 10px;
+  padding: 5px 10px 6px;
+  margin: 0 5px 0 5px;
+}

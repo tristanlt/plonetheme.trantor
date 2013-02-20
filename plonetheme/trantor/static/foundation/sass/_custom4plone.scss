@@ -19,3 +19,20 @@
 #content-core legend {
 	font-size: 120%;
 	}
+.fieldErrorBox {
+	color: $alertColor;
+}
+.formQuestion {
+	padding: 1px 4px 2px; font-size: ms(0) - 2; font-weight: bold; text-align: center; text-decoration: none; line-height: 1; white-space: nowrap; display: inline; position: relative; bottom: 1px; color: #fff; background: $mainColor;
+    padding: 1px 7px 2px; @include border-radius(1000px);
+    margin-bottom: 5px;
+}
+.formHelp {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+input[type='submit'] {
+width: auto; background: $mainColor; border: 1px solid darken(($mainColor), 15%); @include box-shadow(0 1px 0 $shinyEdge inset); color: $white; cursor: pointer; display: inline-block; font-family: inherit; font-size: ms(0); font-weight: bold; line-height: 1; margin: 0; padding: $btnBase ($btnBase * 2) ($btnBase + 1); position: relative; text-align: center; text-decoration: none; @include single-transition(background-color, .15s, ease-in-out);
+font-size: ms(0) - 4; padding: ($tinyBtnBase) ($tinyBtnBase * 2) ($tinyBtnBase + 1);
+margin: 0 5px 0 5px;
+}
