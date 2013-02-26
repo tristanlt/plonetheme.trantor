@@ -1,3 +1,14 @@
+@font-face {
+font-family: 'generalFoundicons';
+src: url('fonts/general_foundicons.eot');
+src: url('fonts/general_foundicons.eot?#iefix') format('embedded-opentype'),
+url('fonts/general_foundicons.woff') format('woff'),
+url('fonts/general_foundicons.ttf') format('truetype'),
+url('fonts/general_foundicons.svg#[set]Foundicons') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
 html, body {
 	height: 100%;
 }
@@ -48,3 +59,14 @@ html, body {
 .field {
 	margin-bottom: 10px;
 }
+
+.foundicons_general {
+font-family: "generalFoundicons";
+}
+input[type="submit"].searchButton {
+background-position: 0px 3px;
+background-repeat: no-repeat;
+background-image: url('../../foundicon-general-search.png');
+text-indent: -999px;
+}
+

@@ -12,15 +12,29 @@
             	i18n:translate="heading_views">Views</dt>
 
             <tal:views repeat="action view_actions">
-              <dd tal:define="selected action/selected|nothing;"
+              <dd tal:define="selected action/selected|nothing;
+                               action_id action/id;
+                               is_folderContents python:action_id == 'folderContents';
+                               is_view python:action_id=='view';
+                               is_edit python:action_id=='edit';
+                               is_contentrules python:action_id=='contentrules';
+                               is_local_roles python:action_id=='local_roles';"
                   tal:attributes="id string:contentview-${action/id};
                                   class python:selected and 'active' or ''">
                 <a href=""
+                   tal:condition="python: not(is_folderContents) and not(is_view) and not(is_edit) and not(is_contentrules) and not(is_local_roles)"
                    tal:content="action/title"
                    tal:attributes="href action/url;"
                    i18n:translate="">
                 View name
                 </a>
+                
+                <a href="" class="foundicons_general" tal:condition="python: is_folderContents" tal:attributes="title action/title; href action/url;" i18n:translate=""> &#xF02A; </a>
+                <a href="" class="foundicons_general" tal:condition="python: is_view" tal:attributes="title action/title; href action/url;" i18n:translate=""> &#xF02C; </a>
+                <a href="" class="foundicons_general" tal:condition="python: is_edit" tal:attributes="title action/title; href action/url;" i18n:translate=""> &#xF01A; </a>
+                <a href="" class="foundicons_general" tal:condition="python: is_contentrules" tal:attributes="title action/title; href action/url;" i18n:translate=""> &#xF00A; </a>
+                <a href="" class="foundicons_general" tal:condition="python: is_local_roles" tal:attributes="title action/title; href action/url;" i18n:translate=""> &#xF01B; </a>
+                
               </dd>
             </tal:views>
         </dl>
