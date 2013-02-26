@@ -40,6 +40,7 @@ html, body {
 }
 #nav-row {
 	overflow: visible;
+	margin-bottom: 10px;
 }
 .overlay {
 	background-color: white;
