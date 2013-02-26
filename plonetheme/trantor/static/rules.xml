@@ -6,24 +6,27 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"
   >
 
-<theme href="index.html" css:if-content="#visual-portal-wrapper" />
-<!--    <theme href="index.html" />-->
+<theme href="index-pcp.html" css:if-content=".template-manage-portlets"/>
+<theme href="index-pcp.html" if="$have_both_portlets"/>
+<theme href="index-pc.html" if="$have_left_portlets"/>
+<theme href="index-cp.html" if="$have_right_portlets"/>
+<theme href="index-c.html" />
 
 <replace content='/html/head/title' theme='/html/head/title' />
 <replace content='/html/head' theme='/html/head' />
-<!--    <merge attributes="class" css:content="body" css:theme="body" /> -->
-<!--    <copy attributes="id dir" css:content="body" css:theme="body" /> -->
+<!-- <merge attributes="class" css:content="body" css:theme="body" /> -->
+<!-- <copy attributes="id dir" css:content="body" css:theme="body" /> -->
 
-    <append css:content="#portal-logo" css:theme="#portal-logo"/>
-	<append css:content-children="#portal-globalnav" css:theme="#portal-globalnav"/>
+<append css:content="#portal-logo" css:theme="#portal-logo"/>
+<append css:content-children="#portal-globalnav" css:theme="#portal-globalnav"/>
 
-	<replace css:theme-children="#personaltool-menu" css:content-children="#portal-personaltools ul"/>
-    <replace css:theme-children="#personaltool-menuheader" css:content-children="#portal-personaltools .actionMenuHeader a"/>
-    <replace css:theme-children="#secondary-nav" css:if-content="#anon-personalbar">
-        <li><xsl:copy-of css:select="#personaltools-login"/></li>
-    </replace>
-	
-	<replace css:content-children="dl.portalMessage">
+<replace css:theme-children="#personaltool-menu" css:content-children="#portal-personaltools ul"/>
+<replace css:theme-children="#personaltool-menuheader" css:content-children="#portal-personaltools .actionMenuHeader a"/>
+<replace css:theme-children="#secondary-nav" css:if-content="#anon-personalbar">
+	<li><xsl:copy-of css:select="#personaltools-login"/></li>
+</replace>
+
+<replace css:content-children="dl.portalMessage">
 	<div class="portalMessage alert-box">
 		<xsl:for-each css:select="dl.portalMessage">
 			<xsl:value-of css:select="dl.portalMessage dt"/>
@@ -31,9 +34,9 @@
 			<xsl:value-of css:select="dl.portalMessage dd"/>
 		</xsl:for-each>
 	</div>
-	</replace>
+</replace>
 	
-	<replace css:content-children="form.enableFormTabbing">
+<replace css:content-children="form.enableFormTabbing">
 	<dl class='tabs'>
 		<xsl:for-each css:select="form.enableFormTabbing > fieldset">
 		<xsl:variable name="cur" select='position()' />
@@ -56,18 +59,16 @@
 		</li>
 		</xsl:for-each>
 	</ul>
-    <xsl:copy-of css:select="#cmfeditions_version_comment_block"/>
-    <xsl:copy-of css:select=".formControls"/>
-	</replace>
+	<xsl:copy-of css:select="#cmfeditions_version_comment_block"/>
+	<xsl:copy-of css:select=".formControls"/>
+</replace>
 
-    <append css:content="#portal-column-content" css:theme="#portal-column-content"/>
-    <append css:content="#portal-column-one" css:theme="#portal-column-one"/>
-    <append css:content="#portal-column-two" css:theme="#portal-column-two"/>
+<append css:content-children="#portal-column-content" css:theme="#portal-column-content"/>
+<append css:content-children="#portal-column-one" css:theme="#portal-column-one" />
+<append css:content-children="#portal-column-two" css:theme="#portal-column-two" />
 
-    <append css:content="#portal-footer" css:theme="#portal-footer"/>
-    <append css:content="#portal-siteactions" css:theme="#portal-siteactions"/>
-	<append css:content="#portal-colophon" css:theme="#portal-colophon"/>
-
-
+<append css:content="#portal-footer" css:theme="#portal-footer"/>
+<append css:content="#portal-siteactions" css:theme="#portal-siteactions"/>
+<append css:content="#portal-colophon" css:theme="#portal-colophon"/>
 
 </rules>
