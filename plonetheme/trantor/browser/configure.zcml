@@ -38,12 +38,12 @@
       provides="zope.contentprovider.interfaces.IContentProvider"
       />
 
-    <browser:viewlet
-        name="plone.global_sections"
-        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-        class=".dropdown.DropdownMenuViewlet"
-        layer=".interfaces.IThemeSpecific"
-        permission="zope2.View"
-        />
+<browser:viewlet
+      name="plone.global_sections"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".dropdown.DropdownMenuViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
 
 </configure>
