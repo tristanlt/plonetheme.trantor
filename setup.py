@@ -29,6 +29,8 @@ setup(name='plonetheme.trantor',
       install_requires=[
           'setuptools',
           'plone.app.theming',
+          'z3c.jbot',
+          'webcouturier.dropdownmenu',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
