@@ -5,6 +5,9 @@
     id="++theme++plonetheme.trantor/foundation/javascripts/foundation/modernizr.foundation.js"/>
 
  <javascript
+    id="++theme++plonetheme.trantor/prettify/prettify.js"/>
+
+ <javascript
     id="plonetheme.trantor.js"/>
 
 </object>

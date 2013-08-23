@@ -8,4 +8,8 @@
     id="++theme++plonetheme.trantor/foundation/stylesheets/app.css"
     expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
+<stylesheet
+    id="++theme++plonetheme.trantor/prettify/prettify.css"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
 </object>
