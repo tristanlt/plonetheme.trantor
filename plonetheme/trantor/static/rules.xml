@@ -70,5 +70,5 @@
 <append css:content="#portal-footer" css:theme="#portal-footer"/>
 <append css:content="#portal-siteactions" css:theme="#portal-siteactions"/>
 <append css:content="#portal-colophon" css:theme="#portal-colophon"/>
-
+<after theme-children="/html/body" css:content="#jsstat" />
 </rules>
