@@ -212,7 +212,7 @@ The project is licensed under the GPLv2.
 Credits
 -------
 
-- Andre Nogueira (agnogueira at gmail dot com).
+- Tristan Le Toullec (tristan dot letoullec at univ-brest dot fr).
 
 .. _`Tristan Le Toullec`: http://tristan.lt/blog
 .. _`plone.app.theming`: https://pypi.org/project/plone.app.theming/
