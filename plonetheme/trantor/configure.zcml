@@ -16,7 +16,7 @@
       name="default"
       title="plonetheme.trantor"
       directory="profiles/default"
-      description='Extension profile for the "Trantor Theme (Foundation Framework)" Plone theme.'
+      description='Installs the "Trantor Theme (Foundation Framework)" Plone theme'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
@@ -24,7 +24,7 @@
       name="uninstall"
       title="plonetheme.trantor: Uninstall profile for Trantor Theme"
       directory="profiles/uninstall"
-      description="Uninstalls the "Trantor Theme (Foundation Framework)" Plone theme."
+      description='Uninstalls the "Trantor Theme (Foundation Framework)" Plone theme.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

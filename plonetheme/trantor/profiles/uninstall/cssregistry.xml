@@ -3,10 +3,11 @@
 
  <stylesheet
     id="++theme++plonetheme.trantor/theme.css" remove="True" />
-<stylesheet
+
+ <stylesheet
     id="++theme++plonetheme.trantor/foundation/stylesheets/app.css" remove="True" />
 
-<stylesheet
+ <stylesheet
     id="++theme++plonetheme.trantor/prettify/prettify.css" remove="True" />
 
 </object>
