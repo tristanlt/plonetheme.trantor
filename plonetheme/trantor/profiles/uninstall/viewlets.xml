@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<object>
+  <hidden manager="plone.portalfooter" skinname="Trantor Theme (Foundation Framework)">
+<!-- EXAMPLE
+    <viewlet name="plonetheme.someviewlet"
+             insert-before="*" />
+-->
+  </hidden>
+
+  <order manager="plone.portalheader" skinname="Trantor Theme (Foundation Framework)">
+<!-- EXAMPLE:
+    <viewlet name="plone.global_sections" />
+-->
+  </order>
+
+</object>

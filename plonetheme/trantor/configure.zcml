@@ -19,6 +19,16 @@
       description='Extension profile for the "Trantor Theme (Foundation Framework)" Plone theme.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="plonetheme.trantor: Uninstall profile for Trantor Theme"
+      directory="profiles/uninstall"
+      description="Uninstalls the "Trantor Theme (Foundation Framework)" Plone theme."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <!-- -*- extra stuff goes here -*- -->
   <include package=".upgrades" />
 
   <plone:static directory="static" type="theme" 

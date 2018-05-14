@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+
+ <javascript
+    id="++theme++plonetheme.trantor/foundation/javascripts/foundation/modernizr.foundation.js"
+    remove="True" />
+
+ <javascript
+    id="++theme++plonetheme.trantor/prettify/prettify.js"
+    remove="True" />
+
+ <javascript
+    id="plonetheme.trantor.js"
+    remove="True" />
+
+</object>
