@@ -47,7 +47,7 @@ Zip file
 
 If you are an end user, you might enjoy installation via zip file import.
 
-1. Download a `zip file <https://github.com/tristanlt/plonetheme.trantor/raw/master/plonetheme.trantor.zip>`_.
+1. Download a `zip file <https://github.com/tristanlt/plonetheme.trantor/raw/master/trantor.zip>`_.
 2. Import the theme from the Diazo theme control panel.
 
 Enabling the theme
