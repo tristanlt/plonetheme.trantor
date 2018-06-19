@@ -5,7 +5,7 @@ version = '1.0'
 
 setup(name='plonetheme.trantor',
       version=version,
-      description="Foundation framework based Plone4 theme (diazo)",
+      description='Trantor Theme, is an installable Diazo theme Foundation framework based for Plone 4',
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -23,6 +23,7 @@ setup(name='plonetheme.trantor',
         "Framework :: Zope3",
         "Intended Audience :: Developers",
         "Intended Audience :: End Users/Desktop",
+        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.6",
