@@ -4,4 +4,18 @@ Changelog
 1.0dev (unreleased)
 -------------------
 
+- Added improvements about README file [macagua]
+
+- Added more strings classifiers items for this package [macagua]
+
+- Added a simple Diazo theme package (Zip file) [macagua]
+
+- Added an GenericSetup uninstall profile [macagua]
+
+- Added HTML5 validation for HTML files [macagua]
+
+- Updated URL html5shiv library for HTML files [macagua]
+
+- Updated diazo theme manifest file also adding preview file [macagua]
+
 - Initial release
